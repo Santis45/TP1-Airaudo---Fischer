@@ -7,6 +7,7 @@
     <title>TP - JS </title>
 </head>
 <body>
+    <!--/////////////////////////// EJERCICIO 1//////////////////////////-->
     <h5> Ejercicio 1 </h5>
     
     <label for="ej1-c1">Numero 1: </label>
@@ -35,6 +36,9 @@
 
         }
     </script>
+    <!--/////////////////////////// EJERCICIO 1//////////////////////////-->
+
+    <!--/////////////////////////// EJERCICIO 2//////////////////////////-->
     
     <h5>Ejercicio 2</h5>
     <label for="ej2-c1">Numero 1: </label>
@@ -68,7 +72,9 @@
             document.getElementById("ej2_resultado").value = "El mayor valor es el C3";
         }
     </script>
+    <!--/////////////////////////// EJERCICIO 2//////////////////////////-->
 
+    <!--/////////////////////////// EJERCICIO 3//////////////////////////-->
     <h5> Ejercicio 3</h5>
 
     <label for ="ej3_c1">Palabra: </label>
@@ -95,7 +101,76 @@
 
         }
     </script>
-   
+
+    <!--/////////////////////////// EJERCICIO 4//////////////////////////-->
+    <h5> Ejercicio 4</h5>
+    
+    <label for ="ej4_c1">Grados Centígrados </label>
+    <input type="number" id ="ej4_c1">
+
+    <label for ="ej4_c2">Grados Farenheit </label>
+    <input type="number" id ="ej4_c2">
+
+    <button onclick="func_ej04()"> Convertir </button>
+    <label for="ej4_resultado"> Resultado: </label>
+    <input type="number" id ="ej4_resultado">
+
+    <script>
+       function func_ej04(){
+
+            let ej4_c1 = parseFloat(document.getElementById("ej4_c1").value);
+            let ej4_c2 = parseFloat(document.getElementById("ej4_c2").value);
+
+            if (ej4_c1 != "" ){
+            ej4_resultado = ((ej4_c1*1.8)+32);
+            document.getElementById("ej4_resultado").value = ej4_resultado;
+            }
+            else
+            if (ej4_c2 != "")
+            ej4_resultado = ((ej4_c2-32)*0.5556);
+            document.getElementById("ej4_resultado").value = ej4_resultado;
+
+        }
+
+    </script>
+
+    <!--/////////////////////////// EJERCICIO 4////////////////////////// -->
+
+    <!--/////////////////////////// EJERCICIO 5////////////////////////// -->
+    <h5> Ejercicio 5 </h5>
+    
+    <label for ="ej5_c1"> Palabra: </label>
+    <input type="text" id ="ej5_c1">
+    
+
+    <button onclick="func_ej05()">Contar caracteres</button>
+    <label for="ej5_resultado"> Resultado: </label>
+    <input type="text" id ="ej5_resultado">
+    
+    <script>
+    function func_ej05()
+    {
+        let ej5_c1 = toString(document.getElementById("ej5_c1").value);
+        
+        document.getElementById("ej5_resultado").value = ej5_c1.length;
+        }
+
+    </script>
+    
+
+    <!--/////////////////////////// EJERCICIO 5////////////////////////// -->
+
+    <!--/////////////////////////// EJERCICIO 6////////////////////////// -->
+
+    <!--/////////////////////////// EJERCICIO 6////////////////////////// -->
+
+    <!--/////////////////////////// EJERCICIO 7////////////////////////// -->
+
+    <!--/////////////////////////// EJERCICIO 7////////////////////////// -->
+
+
+
+
 
 </body>
 </html>
